@@ -47,7 +47,7 @@ public class HorarioInterceptor implements HandlerInterceptor {
 		String mensaje = (String) request.getAttribute("mensaje");
 		
 		if(modelAndView != null && handler instanceof HandlerMethod) {
-			modelAndView.addObject("horario", mensaje);
+			modelAndView.addObject("horario", mensaje); 
 		}
 	}
 
